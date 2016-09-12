@@ -1,0 +1,73 @@
+conky.config = {
+    alignment = 'top_left',
+    background = true,
+    border_width = 0,
+    cpu_avg_samples = 2,
+    default_color = 'lightgrey',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+    double_buffer=true,
+    draw_borders = true,
+    draw_graph_borders = false,
+    draw_outline = false,
+    draw_shades = false,
+    use_xft = true,
+    font = 'Fira Mono for Powerline:size=12',
+    gap_x = 1983,
+    gap_y = 60,
+    minimum_height = 1534,
+    minimum_width = 5,
+    net_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_stderr = false,
+    extra_newline = false,
+    own_window = true,
+    own_window_argb_value=70,
+    own_window_argb_visual=true,
+    own_window_class = 'Conky',
+    own_window_type = 'desktop',
+    stippled_borders = 0,
+    update_interval = 1,
+    uppercase = false,
+    use_spacer = 'none',
+    show_graph_scale = false,
+    show_graph_range = false,
+    temperature_unit='fahrenheit'
+}
+
+conky.text = [[
+$alignc${color lightblue}${uid_name 1000}$color@${color #ff8888}$nodename
+${color #ff8888}System $hr
+${color lightblue}Kernel:$color $kernel
+${color lightblue}Uptime:$color $uptime
+${color lightblue}Battery:$color $battery_percent% ${if_match $battery_percent>66}${color #88ff88}$endif${if_match $battery_percent<67}${color #eeee77}$endif${if_match $battery_percent<34}${color #ff7777}$endif${battery_bar 6}
+${color lightblue}Wifi Network:${color #88ff88} $wireless_essid
+${color lightblue}File System:
+$color${fs_used /}/${fs_size /} ${color #88ff88}${fs_bar 6 /}
+${color lightblue}Networking:
+${color lightblue}Up:$color   ${upspeedgraph wlp3s0 30,200 88ff88 ff6666 1000 -t} ${upspeed wlp3s0} 
+${color lightblue}Down:$color ${downspeedgraph wlp3s0 30,200 88ff88 ff6666 1000 -t} ${downspeed wlp3s0}
+${color #ff8888}CPU $hr
+${color lightblue}Usage:$color $cpu% ${if_match $cpu<33}${color #88ff88}$endif${if_match $cpu>32}${color #eeee77}$endif${if_match $cpu>66}${color #ff6666}$endif${cpubar 6}
+${color lightblue}Temp:$color  ${acpitemp}F
+${color lightblue}Frequency (GHz):$color $freq_g
+${color lightblue}Core 1:$color    ${cpu cpu1}% ${if_match ${cpu cpu1}<10} $endif${if_match ${cpu cpu1}<100} $endif${cpugraph cpu1 30,200 88ff88 ff6666 -t}
+${color lightblue}Core 2:$color    ${cpu cpu2}% ${if_match ${cpu cpu2}<10} $endif${if_match ${cpu cpu2}<100} $endif${cpugraph cpu2 30,200 88ff88 ff6666 -t}
+${color lightblue}Core 3:$color    ${cpu cpu3}% ${if_match ${cpu cpu3}<10} $endif${if_match ${cpu cpu3}<100} $endif${cpugraph cpu3 30,200 88ff88 ff6666 -t}
+${color lightblue}Core 4:$color    ${cpu cpu4}% ${if_match ${cpu cpu4}<10} $endif${if_match ${cpu cpu4}<100} $endif${cpugraph cpu4 30,200 88ff88 ff6666 -t}
+${color lightblue}Load Average:$color ${loadavg 2}
+${color lightblue}Name              PID   CPU%
+${color lightgrey} ${top name 1} ${top pid 1} ${top cpu 1}
+${color lightgrey} ${top name 2} ${top pid 2} ${top cpu 2}
+${color lightgrey} ${top name 3} ${top pid 3} ${top cpu 3}
+${color lightgrey} ${top name 4} ${top pid 4} ${top cpu 4}
+${color #ff8888}RAM $hr
+$color$mem/$memmax - $memperc% ${color #88ff88}${membar 6}
+${color lightblue}Swap:$color $swap/$swapmax - $swapperc% ${color #88ff88}${swapbar 6}
+${color lightblue}Name              PID   MEM%
+${color lightgrey} ${top_mem name 1} ${top_mem pid 1} ${top_mem mem 1}
+${color lightgrey} ${top_mem name 2} ${top_mem pid 2} ${top_mem mem 2}
+${color lightgrey} ${top_mem name 3} ${top_mem pid 3} ${top_mem mem 3}
+${color lightgrey} ${top_mem name 4} ${top_mem pid 4} ${top_mem mem 4}
+]]
