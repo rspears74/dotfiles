@@ -36,9 +36,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+space exec rofi -show run -lines 3
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
+bindsym $mod+space exec rofi -show run -lines 3 -line-margin 25 -opacity 75 -font "Input Mono 28" -width 100 -padding 700 -hide-scrollbar
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
@@ -200,7 +198,8 @@ gaps outer 00
 
 for_window [class="^.*"] border pixel 2
 
+exec compton
 exec_always --no-startup-id xrandr --dpi 227
-exec_always --no-startup-id feh --bg-fill /home/randall/Pictures/Arch3.png
+exec_always --no-startup-id feh --bg-fill /home/randall/Pictures/arch-bg-3.jpg
 exec --no-startup-id nm-applet
 exec dropbox
