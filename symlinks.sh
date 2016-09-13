@@ -1,10 +1,18 @@
-ln -s -f ~/.dotfiles/bashrc ~/.bashrc
-ln -s -f ~/.dotfiles/Xresources ~/.Xresources
-ln -s -f ~/.dotfiles/conkyrc ~/.conkyrc
-ln -s -f ~/.dotfiles/i3 ~/.config/i3/config
-ln -s -f ~/.dotfiles/i3blocks ~/.config/i3blocks/config
+ln -s -f ~/.dotfiles/bash/bashrc ~/.bashrc
+ln -s -f ~/.dotfiles/X/Xresources ~/.Xresources
+ln -s -f ~/.dotfiles/conky/conkyrc ~/.conkyrc
+ln -s -f ~/.dotfiles/i3/i3 ~/.config/i3/config
+ln -s -f ~/.dotfiles/i3/i3blocks ~/.config/i3blocks/config
 ln -s -f ~/.dotfiles/openbox/autostart ~/.config/openbox/autostart
 ln -s -f ~/.dotfiles/openbox/environment ~/.config/openbox/environment
 ln -s -f ~/.dotfiles/openbox/menu.xml ~/.config/openbox/menu.xml
 ln -s -f ~/.dotfiles/openbox/rc.xml ~/.config/openbox/rc.xml
-
+ln -s -f ~/.dotfiles/mpd/mpd.conf ~/.config/mpd/mpd.conf
+ln -s -f ~/.dotfiles/ncmpcpp/config ~/.ncmpcpp/config
+ln -s -f ~/.dotfiles/powerline/config.py ~/.powerline-shell/config.py
+ln -s -f ~/.dotfiles/bin/animatrix ~/.local/bin/animatrix
+ln -s -f ~/.dotfiles/bin/packtrack ~/.local/bin/pactrack
+ln -s -f ~/.dotfiles/bin/passgen ~/.local/bin/passgen
+ln -s -f ~/.dotfiles/bin/wifi ~/.local/bin/wifi
+ln -s -f ~/.dotfiles/zsh/zshrc ~/.zshrc
+ln -s -f ~/.dotfiles/zsh/zshenv ~/.zshenv

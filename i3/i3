@@ -196,7 +196,7 @@ bar {
 gaps inner 50
 gaps outer 00
 
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 
 exec compton
 exec_always --no-startup-id xrandr --dpi 227

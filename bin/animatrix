@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# matrix animation
+python3 /home/randall/Dropbox/python/misc/matrix2.py
+
