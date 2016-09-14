@@ -200,6 +200,6 @@ for_window [class="^.*"] border pixel 1
 
 exec compton
 exec_always --no-startup-id xrandr --dpi 227
-exec_always --no-startup-id feh --bg-fill /home/randall/Pictures/arch-bg-3.jpg
+exec_always --no-startup-id ~/.fehbg
 exec --no-startup-id nm-applet
 exec dropbox
