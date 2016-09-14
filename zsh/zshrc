@@ -32,6 +32,15 @@ path=($HOME/.local/bin $path)
 
 source /usr/bin/virtualenvwrapper.sh
 
+# ----------------------pacman aliases
+
+if [ $DISTRO = "arch" ]; then
+	alias pacinst='sudo pacman -S';
+	alias pacsync='sudo pacman -Sy';
+	alias pacupg='sudo pacman -Syu';
+	alias pacrem='sudo pacman -R';
+fi
+
 # ----------------------Powerline prompt
 
 function powerline_precmd() {

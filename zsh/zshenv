@@ -9,3 +9,9 @@ export LS_COLORS
 # virtualenvwrapper python
 
 export VIRTUALENVWRAPPERPYTHON=/usr/bin/python3
+
+
+# Distro
+
+DISTRO=$(cat /etc/os-release | grep ID | sed -n -e 's/ID=//p')
+export DISTRO
