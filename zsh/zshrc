@@ -11,11 +11,13 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+
 # ----------------------Color stuff
 
 autoload colors; colors;
 alias ls='ls --color=auto'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
 
 # ----------------------Completion stuff
 
@@ -23,14 +25,11 @@ autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select
 
-# ----------------------Path
-
-typeset -U path
-path=($HOME/.local/bin $path)
 
 # ----------------------Python virtualenvwrapper
 
 source /usr/bin/virtualenvwrapper.sh
+
 
 # ----------------------pacman aliases
 
@@ -39,7 +38,9 @@ if [ $DISTRO = "arch" ]; then
 	alias pacupd='sudo pacman -Sy';
 	alias pacupg='sudo pacman -Syu';
 	alias pacrem='sudo pacman -R';
+	alias pacsearch='pacman -Ss';
 fi
+
 
 # ----------------------Sudo key shortcut
 
@@ -63,6 +64,7 @@ zle -N sudo-command-line
 # Defined shortcut keys: [Esc] [Esc]
 
 bindkey "\e\e" sudo-command-line
+
 
 # ----------------------Powerline prompt
 

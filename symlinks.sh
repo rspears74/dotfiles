@@ -11,8 +11,9 @@ ln -s -f ~/.dotfiles/mpd/mpd.conf ~/.config/mpd/mpd.conf
 ln -s -f ~/.dotfiles/ncmpcpp/config ~/.ncmpcpp/config
 ln -s -f ~/.dotfiles/powerline/config.py ~/.powerline-shell/config.py
 ln -s -f ~/.dotfiles/bin/animatrix ~/.local/bin/animatrix
-ln -s -f ~/.dotfiles/bin/packtrack ~/.local/bin/pactrack
+ln -s -f ~/.dotfiles/bin/packtrack ~/.local/bin/packtrack
 ln -s -f ~/.dotfiles/bin/passgen ~/.local/bin/passgen
 ln -s -f ~/.dotfiles/bin/wifi ~/.local/bin/wifi
+ln -s -f ~/.dotfiles/bin/google ~/.local/bin/google
 ln -s -f ~/.dotfiles/zsh/zshrc ~/.zshrc
 ln -s -f ~/.dotfiles/zsh/zshenv ~/.zshenv
