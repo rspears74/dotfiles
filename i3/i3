@@ -164,9 +164,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # ----------------------------AUDIO
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% & paplay /usr/share/sounds/gnome/default/alerts/sonar.ogg
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% & paplay /usr/share/sounds/gnome/default/alerts/sonar.ogg
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle & paplay /usr/share/sounds/gnome/default/alerts/sonar.ogg
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # ----------------------------BACKLIGHT
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20
