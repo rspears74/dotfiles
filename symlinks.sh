@@ -17,3 +17,4 @@ ln -s -f ~/.dotfiles/bin/wifi ~/.local/bin/wifi
 ln -s -f ~/.dotfiles/bin/google ~/.local/bin/google
 ln -s -f ~/.dotfiles/zsh/zshrc ~/.zshrc
 ln -s -f ~/.dotfiles/zsh/zshenv ~/.zshenv
+ln -s -f ~/.dotfiles/atom/styles.less ~/.atom/styles.less

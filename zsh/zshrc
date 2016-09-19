@@ -34,11 +34,12 @@ source /usr/bin/virtualenvwrapper.sh
 # ----------------------pacman aliases
 
 if [ $DISTRO = "arch" ]; then
-	alias pacinst='sudo pacman -S';
-	alias pacupd='sudo pacman -Sy';
-	alias pacupg='sudo pacman -Syu';
-	alias pacrem='sudo pacman -R';
-	alias pacsearch='pacman -Ss';
+	alias install='sudo pacman -S';
+	alias update='sudo pacman -Sy';
+	alias upgrade='sudo pacman -Syu';
+	alias remove='sudo pacman -R';
+	alias search='pacman -Ss';
+	alias clearcache='pacman -Sc';
 fi
 
 

@@ -23,4 +23,4 @@ export DISTRO
 
 # Scaling GTK Applications
 
-export GDK_SCALE=2
+# export GDK_SCALE=2
