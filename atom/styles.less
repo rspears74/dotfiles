@@ -1,9 +1,5 @@
-@string-color: #557744;
+@string-color: #779966;
 @comment-color: #886644;
-@keyword-color: #9988cc;
-@function-color: #4499aa;
-@parameter-color: #aa5566;
-@number-color: #aa5566;
 
 atom-text-editor::shadow .lines {
 
@@ -18,37 +14,4 @@ atom-text-editor::shadow .lines {
   .punctuation.comment {
     .comment
   }
-
-  .integer {
-    color: @number-color;
-  }
-
-  .float {
-    .integer
-  }
-
-  .keyword {
-    color: @keyword-color;
-  }
-
-  .entity.name.function {
-    color: @function-color;
-  }
-
-  .storage.type.function {
-    .keyword
-  }
-
-  .variable.parameter.function {
-    color: @parameter-color;
-  }
-
-  .keyword.operator {
-    color: currentColor;
-  }
-
-  .keyword.operator.logical.python {
-    .keyword
-  }
-
 }
