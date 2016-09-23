@@ -104,7 +104,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # ----------------------------WORKSPACES
 set $workspace1 "1:"
 set $workspace2 "2:"
-set $workspace3 "3"
+set $workspace3 "3:"
 set $workspace4 "4"
 set $workspace5 "5"
 set $workspace6 "6"
