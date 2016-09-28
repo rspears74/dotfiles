@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo cp /usr/share/themes/activities.svg /usr/share/themes/Arc/gnome-shell/common-assets/panel/
+
+sudo cp /usr/share/themes/activities.svg /usr/share/themes/Arc-Dark/gnome-shell/common-assets/panel/
