@@ -72,16 +72,16 @@ interval=30
 [iface]
 #instance=wlan0
 color=#00FF00
-interval=10
+interval=1
 separator=false
 
 [wifi]
 color=#9999FF
-interval=4
+interval=1
 
 [bandwidth]
 #instance=eth0
-interval=5
+interval=1
 
 # CPU usage
 #
