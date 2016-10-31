@@ -224,6 +224,8 @@ for_window [class="^.*"] border pixel 2
 # ----------------------------STARTUP COMMANDS
 
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+exec --no-startup-id synclient ClickTime=0
+exec --no-startup-id synclient SingleTapTimeout=0
 exec --no-startup-id synclient TapAndDragGesture=0
 exec compton
 exec_always --no-startup-id xrandr --dpi 227
