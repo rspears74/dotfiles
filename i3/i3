@@ -231,3 +231,4 @@ exec compton
 exec_always --no-startup-id xrandr --dpi 227
 exec_always --no-startup-id ~/.fehbg
 exec dropbox
+exec --no-startup-id nm-applet
