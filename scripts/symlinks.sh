@@ -19,3 +19,5 @@ ln -s -f ~/.dotfiles/bin/fix-arc-theme ~/.local/bin/fix-arc-theme
 ln -s -f ~/.dotfiles/zsh/zshrc ~/.zshrc
 ln -s -f ~/.dotfiles/zsh/zshenv ~/.zshenv
 ln -s -f ~/.dotfiles/atom/styles.less ~/.atom/styles.less
+ln -s -f ~/.dotfiles/xmonad/xmonad.hs ~/.xmonad/xmonad.hs
+ln -s -f ~/.dotfiles/xmonad/xmonad-startup ~/.local/bin/xmonad-startup

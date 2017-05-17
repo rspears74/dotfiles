@@ -1,17 +1,17 @@
 @string-color: #779966;
 @comment-color: #886644;
 
-atom-text-editor::shadow .lines {
+atom-text-editor.editor .lines {
 
-  .string {
+  .syntax--string {
     color: @string-color;
   }
 
-  .comment {
+  .syntax--comment {
     color: @comment-color;
   }
 
-  .punctuation.comment {
-    .comment
+  .syntax--punctuation.comment {
+    .syntax--comment
   }
 }

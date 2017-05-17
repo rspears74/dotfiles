@@ -1,0 +1,4 @@
+#!/bin/bash
+
+feh --bg-fill ~/Pictures/Arch2.png
+xmonad
