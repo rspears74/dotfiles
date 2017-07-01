@@ -1,5 +1,5 @@
 Xft.dpi:	192
 
 rofi.color-enabled: true
-rofi.color-window:  #4488dd, #4488dd, #4488dd
-rofi.color-normal:  #4488dd, #eeeeee, #4488dd, #225599, #ffffff
+rofi.color-window:  #5599dd, #5599dd, #5599dd
+rofi.color-normal:  #5599dd, #eeeeee, #5599dd, #225599, #ffffff

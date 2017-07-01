@@ -85,3 +85,7 @@ function install_powerline_precmd() {
 if [ "$TERM" != "linux" ]; then
 	install_powerline_precmd
 fi
+
+# ---------------------Aliases
+
+alias netstart='sudo systemctl restart NetworkManager';

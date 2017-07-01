@@ -1,4 +1,6 @@
 #!/bin/bash
 
-feh --bg-fill ~/Pictures/Arch2.png
+/home/randall/.fehbg
+dropbox start
+nm-applet &
 xmonad
