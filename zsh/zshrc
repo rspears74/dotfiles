@@ -39,7 +39,7 @@ if [ $DISTRO = "arch" ]; then
 	alias upgrade='sudo pacman -Syu';
 	alias remove='sudo pacman -R';
 	alias search='pacman -Ss';
-	alias clearcache='pacman -Sc';
+	alias clearcache='sudo pacman -Sc';
 fi
 
 

@@ -216,7 +216,7 @@ client.placeholder      #6688bb #6688bb    #000000 #6688bb   #6688bb
 client.background       #6688bb
 
 # ----------------------------i3-gaps
-gaps inner 50
+gaps inner 20
 gaps outer 00
 
 for_window [class="^.*"] border pixel 2
